@@ -1,16 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.parkingmanager;
 
-/**
- *
- * @author Tran Vu
- */
-public class ParkingManager {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class ParkingManager extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/parkingmanager/ui/parking_ui.fxml"));
+        Parent root = loader.load();
+
+        Scene scene = new Scene(root);
+        stage.setTitle("Parking Management System");
+        stage.setScene(scene);
+        stage.show();
+    }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        launch(args);
     }
 }

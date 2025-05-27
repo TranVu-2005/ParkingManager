@@ -11,18 +11,21 @@
         <exec.mainClass>com.mycompany.parkingmanager.ParkingManager</exec.mainClass>
     </properties>
     <dependencies>
-        <!-- JavaFX -->
+        <!-- JavaFX Controls -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>20</version>
+            <version>21.0.1</version>
         </dependency>
+
+        <!-- JavaFX FXML -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>20</version>
+            <version>25-ea+18</version>
+            <type>jar</type>
         </dependency>
-
+        
         <!-- MySQL JDBC -->
         <dependency>
             <groupId>mysql</groupId>
